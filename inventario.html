@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario PWA</title>
+    <link rel="stylesheet" href="css/inventario.css">
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>Sistema de Inventario</h1>
+            <div id="status" class="status online">En línea</div>
+        </div>
+
+        <form id="form-inventario">
+            <input type="text" id="nombreProducto" placeholder="Nombre del producto" required>
+            <input type="number" id="cantidadProducto" placeholder="Cantidad" required>
+            <button type="submit" id="btnGuardar">Guardar Producto</button>
+        </form>
+
+        <section>
+            <h2>Productos en Existencia</h2>
+            <ul id="lista-inventario"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 UTR - Inventario Offline</p>
+    </footer>
+
+    <script src="db-inventario.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
